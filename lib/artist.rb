@@ -20,6 +20,8 @@ class Artist
     binding.pry
   end
 
+  binding.pry
+
   def songs
     Songs.all.select do |song|
       song.artist == self
