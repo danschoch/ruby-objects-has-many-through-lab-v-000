@@ -20,6 +20,7 @@ class Patient
     Appointment.all.select do |appointment|
       appointment.patient == self
     end
+    binding.pry
   end
 
   def doctors
@@ -27,5 +28,4 @@ class Patient
       appointment.doctor
     end
   end
-
 end
