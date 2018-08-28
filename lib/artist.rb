@@ -17,10 +17,7 @@ class Artist
 
   def new_song(name, genre)
     self.songs << Song.new(name, self, genre)
-    binding.pry
   end
-
-  binding.pry
 
   def songs
     Songs.all.select do |song|
